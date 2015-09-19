@@ -9,8 +9,8 @@ PROVIDES = "u-boot"
 
 PV = "v2014.07+git${SRCPV}"
 
-SRCREV_udooneo = "2b41110e2502a1f55250fde3fe98023249895005"
-SRCBRANCH_udooneo = "l5.0.0_1.0.0-ga_neo"
+SRCREV_udooneo = "d3fbdc01e9b9a2cf492f60047568cd854be3557a"
+SRCBRANCH = "master"
 SRC_URI = "git://github.com/udooboard/uboot-imx.git;branch=${SRCBRANCH}"
 
 S = "${WORKDIR}/git"
