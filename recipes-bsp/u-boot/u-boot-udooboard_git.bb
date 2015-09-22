@@ -15,4 +15,8 @@ SRC_URI = "git://github.com/udooboard/uboot-imx.git;branch=${SRCBRANCH}"
 
 S = "${WORKDIR}/git"
 
+do_configure_prepend() {
+    sed -i "s/\(^Active\s*arm.*udoo.*DEFAULT_FDT_FILE=\"\)\(.*\)\(\".*$\)/\1${UBOOT_DEFAULT_DEVICETREE}\3/" boards.cfg
+}
+
 PACKAGE_ARCH = "${MACHINE_ARCH}"
