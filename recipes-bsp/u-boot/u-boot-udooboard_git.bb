@@ -11,7 +11,9 @@ PV = "v2014.07+git${SRCPV}"
 
 SRCREV = "d3fbdc01e9b9a2cf492f60047568cd854be3557a"
 SRCBRANCH = "master"
-SRC_URI = "git://github.com/udooboard/uboot-imx.git;branch=${SRCBRANCH}"
+SRC_URI = "git://github.com/udooboard/uboot-imx.git;branch=${SRCBRANCH} \
+           file://udoo-config-unification.patch \
+"
 
 S = "${WORKDIR}/git"
 
