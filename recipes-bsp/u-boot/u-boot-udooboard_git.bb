@@ -9,7 +9,7 @@ PROVIDES = "u-boot"
 
 PV = "v2014.07+git${SRCPV}"
 
-SRCREV = "d3fbdc01e9b9a2cf492f60047568cd854be3557a"
+SRCREV = "edd0741743932c669461c549ae53320f4313c4cd"
 SRCBRANCH = "master"
 SRC_URI = "git://github.com/udooboard/uboot-imx.git;branch=${SRCBRANCH} \
            file://udoo-config-unification.patch \
