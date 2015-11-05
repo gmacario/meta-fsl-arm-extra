@@ -19,6 +19,9 @@ UDOOBOARD_GITHUB_MIRROR ?= "git://github.com/UDOOboard/linux_kernel.git"
 
 # SRC_URI for wandboard kernel
 SRC_URI = "${UDOOBOARD_GITHUB_MIRROR};branch=${SRCBRANCH} \
+           file://0001-ARM-8158-1-LLVMLinux-use-static-inline-in-ARM-ftrace.patch \
+           file://0002-ARM-LLVMLinux-Change-extern-inline-to-static-inline-.patch \
+           file://0003-remove-TIMESTAMP-if-gcc-4.9-is-used.patch \
            file://defconfig \
 "
 
