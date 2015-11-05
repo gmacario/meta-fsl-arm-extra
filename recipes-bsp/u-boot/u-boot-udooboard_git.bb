@@ -12,6 +12,8 @@ PV = "v2014.07+git${SRCPV}"
 SRCREV = "edd0741743932c669461c549ae53320f4313c4cd"
 SRCBRANCH = "master"
 SRC_URI = "git://github.com/udooboard/uboot-imx.git;branch=${SRCBRANCH} \
+           file://0001-Fix-builds-with-gcc5.patch \
+           file://0002-Fix-inline-build-issues-with-gcc5.patch \
            file://udoo-config-unification.patch \
 "
 
